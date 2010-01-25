@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Federal.Storage" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Federal.Storage" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="ServiceNodeState">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Up" />
+      <xs:enumeration value="Down" />
+      <xs:enumeration value="KeepAlive" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ServiceNodeState" nillable="true" type="tns:ServiceNodeState" />
+</xs:schema>

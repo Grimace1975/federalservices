@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="15a600cf-6b8e-4d5a-80b4-f22bc4c9a4b4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="net.tcp://localhost:1010/Neurox/StorageService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="52bc0b73-b49d-4b79-8370-d998b0d58e2b" SourceId="1" SourceUrl="net.tcp://localhost:1010/Neurox/StorageService/mex" />
+    <MetadataFile FileName="neurox.local.xsd" MetadataType="Schema" ID="fa7e44ef-8a9b-4abd-ba19-5d7aafd5568d" SourceId="1" SourceUrl="net.tcp://localhost:1010/Neurox/StorageService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="27adf554-69c2-4415-a722-8f45b6507aa5" SourceId="1" SourceUrl="net.tcp://localhost:1010/Neurox/StorageService/mex" />
+    <MetadataFile FileName="Federal.Storage.xsd" MetadataType="Schema" ID="1e4ab995-a883-471f-a822-acd58f6f5270" SourceId="1" SourceUrl="net.tcp://localhost:1010/Neurox/StorageService/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="6b53adf4-2ec0-49da-b491-becd6a3b8e8d" SourceId="1" SourceUrl="net.tcp://localhost:1010/Neurox/StorageService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6B307669-8FFB-4D6A-99EC-2C799F33B23B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Federal</RootNamespace>
+    <AssemblyName>Federal.Mmc</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="microsoft.managementconsole, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Reactive, Version=1.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library_\Reactive\System.Reactive.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataReaderExtensions.cs" />
+    <Compile Include="Environment.cs" />
+    <Compile Include="KernelDatabase.cs" />
+    <Compile Include="Model\ModelBase.cs" />
+    <Compile Include="Model\Database\DatabaseModel.cs" />
+    <Compile Include="Model\Database\DatabaseStatus.cs" />
+    <Compile Include="Model\Database\DatabaseSecurityLoginModel.cs" />
+    <Compile Include="Model\Database\DatabaseSecurityLoginType.cs" />
+    <Compile Include="Model\Database\DatabaseSecurityRoleModel.cs" />
+    <Compile Include="Model\SecurityLoginModel.cs" />
+    <Compile Include="Model\SecurityLoginType.cs" />
+    <Compile Include="Model\SecurityServerRoleModel.cs" />
+    <Compile Include="Model\ServerModel.cs" />
+    <Compile Include="Model\ServerStatus.cs" />
+    <Compile Include="Node\NodeBase.cs" />
+    <Compile Include="Node\DatabasesNode.cs" />
+    <Compile Include="Node\DatabaseNode.cs" />
+    <Compile Include="Node\Database\DatabaseOtherNode.cs" />
+    <Compile Include="Node\Database\DatabaseSecurityNode.cs" />
+    <Compile Include="Node\Database\DatabaseSecurityLoginsNode.cs" />
+    <Compile Include="Node\Database\DatabaseSecurityLoginNode.cs" />
+    <Compile Include="Node\Database\DatabaseSecurityRolesNode.cs" />
+    <Compile Include="Node\Database\DatabaseSecurityRoleNode.cs" />
+    <Compile Include="Node\SecurityNode.cs" />
+    <Compile Include="Node\SecurityLoginsNode.cs" />
+    <Compile Include="Node\SecurityLoginNode.cs" />
+    <Compile Include="Node\SecurityServerRolesNode.cs" />
+    <Compile Include="Node\SecurityServerRoleNode.cs" />
+    <Compile Include="Node\ServerNode.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource_.cs" />
+    <Compile Include="SelectionListView.cs" />
+    <Compile Include="SnapIn.cs" />
+    <Compile Include="SnapInInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource_\Connection.ico" />
+    <EmbeddedResource Include="Resource_\ConnectionBound.ico" />
+    <EmbeddedResource Include="Resource_\ConnectionPaused.ico" />
+    <EmbeddedResource Include="Resource_\ConnectionStarted.ico" />
+    <EmbeddedResource Include="Resource_\ConnectionStopped.ico" />
+    <EmbeddedResource Include="Resource_\ConnectionUnknown.ico" />
+    <EmbeddedResource Include="Resource_\Database.ico" />
+    <EmbeddedResource Include="Resource_\DatabaseEmergencyMode.ico" />
+    <EmbeddedResource Include="Resource_\DatabaseInRecovery.ico" />
+    <EmbeddedResource Include="Resource_\DatabaseOffline.ico" />
+    <EmbeddedResource Include="Resource_\DatabaseReadOnly.ico" />
+    <EmbeddedResource Include="Resource_\DatabaseRestoring.ico" />
+    <EmbeddedResource Include="Resource_\DatabaseSingleUser.ico" />
+    <EmbeddedResource Include="Resource_\DatabaseSuspect.ico" />
+    <EmbeddedResource Include="Resource_\Login.ico" />
+    <EmbeddedResource Include="Resource_\LoginDisabled.ico" />
+    <EmbeddedResource Include="Resource_\Network.ico" />
+    <EmbeddedResource Include="Resource_\NetworkDown.ico" />
+    <EmbeddedResource Include="Resource_\NetworkHidden.ico" />
+    <EmbeddedResource Include="Resource_\NetworkHiddenDown.ico" />
+    <EmbeddedResource Include="Resource_\NeuroxPaused.ico" />
+    <EmbeddedResource Include="Resource_\NeuroxStarted.ico" />
+    <EmbeddedResource Include="Resource_\NeuroxStopped.ico" />
+    <EmbeddedResource Include="Resource_\NeuroxUnknown.ico" />
+    <EmbeddedResource Include="Resource_\NtGroup.ico" />
+    <EmbeddedResource Include="Resource_\ProcessPaused.ico" />
+    <EmbeddedResource Include="Resource_\ProcessStarted.ico" />
+    <EmbeddedResource Include="Resource_\ProcessStopped.ico" />
+    <EmbeddedResource Include="Resource_\ProcessUnknown.ico" />
+    <EmbeddedResource Include="Resource_\Role.ico" />
+    <EmbeddedResource Include="Resource_\Sensor.ico" />
+    <EmbeddedResource Include="Resource_\SensorRunning.ico" />
+    <EmbeddedResource Include="Resource_\SensorStopped.ico" />
+    <EmbeddedResource Include="Resource_\Statistic.ico" />
+    <EmbeddedResource Include="Resource_\Undefined.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>@C:\Windows\Microsoft.NET\Framework64\v2.0.50727\InstallUtil.exe $(TargetPath)</PostBuildEvent>
+  </PropertyGroup>
+</Project>
